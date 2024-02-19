@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../otros/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../otros/Poppins-Medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    color: white;
+    font-family: Poppins-Regular;
+}
+body{
+    background-color: rgb(13, 13, 13);
+}
+.img {
+    max-width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+}
+header {
+    height: 450px;
+}
+li {
+    list-style: none;
+    margin: 0.5em;
+    background-color: none;
+}
+ul {
+    padding: 0 !important;
+}
+h1 {
+    font-size: 1.8em;
+    font-family: 'Poppins-Medium';
+}
+h2 {
+    font-size: 1.5em;
+    font-family: 'Poppins-Medium';
+}
+h3 {
+    font-size: 1.2em;
+}
+a {
+    color: white !important;
+    text-decoration: none;
+}
+.proyect1{
+    background-image: url(../img/inner2.jpg);
+    background-size: cover;
+    background-position: inherit;
+}
+.proyect2 {
+    background-image: url(../img/atypical.jpg);
+    background-size: cover;
+    background-position: inherit;
+}
+.proyect3 {
+    background-image: url(../img/CrystalEye.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.proyect4 {
+    background-image: url(../img/BannerInstagram.jpg);
+    background-size: cover;
+}
+.box{
+    box-shadow: 8px 6px 10px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 8px 6px 10px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 6px 10px -7px rgba(0, 0, 0, 0.75);
+}
+.porcentaje {
+    font-size: 0.8em;
+}
+.skills{
+    height: 3.5em;
+    margin-bottom: 0.8em;
+}
+/*Efecto tarjetas*/
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.overlay-text{
+    margin: 0;
+}
+.card:hover .overlay {
+    opacity: 1;
+}
